@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
 html,
 body {
   padding: 0;
@@ -225,14 +234,13 @@ Start Home Section
 
 /*Start Contact Page*/
 .contact-form {
-  margin: 0 auto;
-  height: 20%;
-  width: 70%;
+  margin: 0 auto 50px auto;
+  width: 80%;
   text-align: center;
 }
 
 .form-item {
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .form-item label {
@@ -244,10 +252,18 @@ Start Home Section
 
 .form-item input {
   width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 10px;
+  font-size: 1.2em;
 }
 
 #form-message {
   width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 7px;
 }
 
 .contact-form input[type="submit"] {
@@ -257,6 +273,7 @@ Start Home Section
   color: #ffffff;
 
   padding: 10px 20px;
+  margin-top: 15px;
 
   font-size: 15px;
   font-weight: bold;
